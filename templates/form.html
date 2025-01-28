@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header img {
+            max-width: 200px;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Le Cordon Bleu Logo">
+    </header>
+    <div class="content">
+        <h1>Tokenización de Tarjetas</h1>
+        <p>
+            Este formulario es para tokenizar su tarjeta de acuerdo con los procesos de GPP U. 
+            Por favor, utilice el <strong>Student ID</strong> proporcionado por la institución.
+        </p>
+        <p>
+            Los cobros serán realizados <strong>5 días antes de la última fecha de pago</strong>, según lo acordado
+            previamente con GPP.
+        </p>
+        <p>
+            Tenga en cuenta que los datos proporcionados serán tratados conforme a la política de protección de datos 
+            de GPP.
+        </p>
+        <form method="POST" action="/">
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id" required>
+            <button type="submit">Iniciar Tokenización</button>
+        </form>
+    </div>
+    <footer>
+        © 2025 GPP. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

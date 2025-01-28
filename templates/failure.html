@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - GPP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff0f0;
+            padding: 20px;
+        }
+        header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #e74c3c;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Le Cordon Bleu Logo">
+    </header>
+    <h1>Algo salió mal</h1>
+    <p>No pudimos completar el proceso de tokenización. Por favor, inténtelo de nuevo.</p>
+    <a href="/">Volver al Inicio</a>
+</body>
+</html>

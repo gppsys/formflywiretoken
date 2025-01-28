@@ -1,0 +1,5 @@
+flask
+pyodbc
+requests
+python-decouple
+gunicorn

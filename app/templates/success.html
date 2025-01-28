@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éxito - GPP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0fff0;
+            padding: 20px;
+        }
+        header img {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2ecc71;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='logo.jpg') }}" alt="Le Cordon Bleu Logo">
+    </header>
+    <h1>¡Tokenización Exitosa!</h1>
+    <p>Gracias por completar el proceso de tokenización. Su información ha sido registrada correctamente.</p>
+    <a href="/">Volver al Inicio</a>
+</body>
+</html>
