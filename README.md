@@ -145,8 +145,7 @@ SELECT * FROM transactions;
    - Configure HTTPS and other security measures.
 
 2. **Security**:
-   - Do not include the `.env` file in your version control.
-   - Ensure secure access to sensitive keys and database credentials.
+
 
 3. **Error Handling**:
    - If Flywire's API fails, the application redirects the user to a failure page (`/failure`).
